@@ -1,0 +1,12 @@
+# Runtime only. Install torch/torchvision separately from the official CPU index.
+numpy==2.4.6
+pandas==3.0.6
+scikit-learn==1.9.1
+opencv-python==5.0.0.93
+Pillow==12.3.0
+matplotlib==3.11.2
+streamlit==1.65.0
+altair==6.3.0
+grad-cam==1.5.5
+tqdm==4.70.1
+requests==2.34.2

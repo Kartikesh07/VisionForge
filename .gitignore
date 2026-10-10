@@ -1,0 +1,57 @@
+# Local Python environments and bootstrap files
+.venv/
+venv/
+.python311/
+.python-installer.exe
+
+# Datasets (keep directory placeholders)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/.neu-*/
+data/.split-stage-*/
+NEU-DET/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+
+# Generated artifacts (keep directory placeholders)
+artifacts/models/*
+!artifacts/models/.gitkeep
+artifacts/reports/*
+!artifacts/reports/.gitkeep
+*.pt
+*.pth
+*.onnx
+
+# Python, tooling, and application caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.torch/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Local secrets, logs, and editor files
+.env
+.env.*
+.streamlit/secrets.toml
+*.log
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Local deployment bundles and incomplete downloads
+artifacts/deployment/
+*.partial
+*.tmp

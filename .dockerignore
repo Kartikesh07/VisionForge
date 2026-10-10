@@ -1,0 +1,11 @@
+# Build context contains only application runtime assets.
+**
+!app.py
+!src/
+!src/*.py
+!.streamlit/
+!.streamlit/config.toml
+!deployment/
+!deployment/*.py
+!deployment/*.json
+!deployment/requirements.txt

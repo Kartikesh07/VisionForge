@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "dataset_audit": "evaluation_dataset_audit.json",
+  "test_inference_executed": true,
+  "models": {
+    "custom_cnn": {
+      "samples": 270,
+      "accuracy": 0.9444444444444444,
+      "macro_precision": 0.9449202166593472,
+      "macro_recall": 0.9444444444444445,
+      "macro_f1": 0.9446045007842762,
+      "per_class": {
+        "crazing": {
+          "precision": 0.9772727272727273,
+          "recall": 0.9555555555555556,
+          "f1-score": 0.9662921348314607,
+          "support": 45.0
+        },
+        "inclusion": {
+          "precision": 0.8695652173913043,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8791208791208791,
+          "support": 45.0
+        },
+        "patches": {
+          "precision": 0.9565217391304348,
+          "recall": 0.9777777777777777,
+          "f1-score": 0.967032967032967,
+          "support": 45.0
+        },
+        "pitted_surface": {
+          "precision": 0.8888888888888888,
+          "recall": 0.8888888888888888,
+          "f1-score": 0.8888888888888888,
+          "support": 45.0
+        },
+        "rolled_in_scale": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "scratches": {
+          "precision": 0.9772727272727273,
+          "recall": 0.9555555555555556,
+          "f1-score": 0.9662921348314607,
+          "support": 45.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          43,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          44,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          40,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          43
+        ]
+      ],
+      "confusion_matrix_axes": "rows actual, columns predicted",
+      "class_order": [
+        "crazing",
+        "inclusion",
+        "patches",
+        "pitted_surface",
+        "rolled_in_scale",
+        "scratches"
+      ],
+      "misclassification_count": 15,
+      "validation_accuracy": 0.9703703703703703,
+      "validation_macro_f1": 0.9703891930974294,
+      "accuracy_change_from_validation": -0.025925925925925908,
+      "macro_f1_change_from_validation": -0.02578469231315328,
+      "checkpoint": "artifacts/models/baseline_cnn.pth",
+      "selected_epoch": 7,
+      "selected_phase": "custom_cnn",
+      "parameter_count": 390438,
+      "inference_duration_seconds": 1.1126296000002185,
+      "effective_batch_size": 32,
+      "oom_failed_batch_sizes": [],
+      "visualizations": [
+        "custom_cnn_test_confusion_matrix.png",
+        "custom_cnn_test_misclassified_01.png",
+        "custom_cnn_test_misclassified_02.png"
+      ]
+    },
+    "resnet18": {
+      "samples": 270,
+      "accuracy": 0.9962962962962963,
+      "macro_precision": 0.9963768115942028,
+      "macro_recall": 0.9962962962962963,
+      "macro_f1": 0.9962958389924682,
+      "per_class": {
+        "crazing": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "inclusion": {
+          "precision": 1.0,
+          "recall": 0.9777777777777777,
+          "f1-score": 0.9887640449438202,
+          "support": 45.0
+        },
+        "patches": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "pitted_surface": {
+          "precision": 0.9782608695652174,
+          "recall": 1.0,
+          "f1-score": 0.989010989010989,
+          "support": 45.0
+        },
+        "rolled_in_scale": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "scratches": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          45,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          44,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          45,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          45,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          45
+        ]
+      ],
+      "confusion_matrix_axes": "rows actual, columns predicted",
+      "class_order": [
+        "crazing",
+        "inclusion",
+        "patches",
+        "pitted_surface",
+        "rolled_in_scale",
+        "scratches"
+      ],
+      "misclassification_count": 1,
+      "validation_accuracy": 1.0,
+      "validation_macro_f1": 1.0,
+      "accuracy_change_from_validation": -0.0037037037037036535,
+      "macro_f1_change_from_validation": -0.003704161007531792,
+      "checkpoint": "artifacts/models/resnet18_best.pth",
+      "selected_epoch": 13,
+      "selected_phase": "fine_tune",
+      "parameter_count": 11179590,
+      "inference_duration_seconds": 0.9333939000061946,
+      "effective_batch_size": 32,
+      "oom_failed_batch_sizes": [],
+      "visualizations": [
+        "resnet18_test_confusion_matrix.png",
+        "resnet18_test_misclassified_01.png"
+      ]
+    }
+  },
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "precision": "CUDA float16 autocast, as used for validation",
+  "confidence_definition": "Uncalibrated maximum softmax score, not a calibrated probability",
+  "previous_artifacts_and_datasets_unchanged": true
+}

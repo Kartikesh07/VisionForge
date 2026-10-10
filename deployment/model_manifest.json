@@ -1,0 +1,7 @@
+{
+  "filename": "resnet18_best.pth",
+  "bytes": 44798219,
+  "sha256": "ca32161ed4977e5390bc939d9fb3058da3cdec7b11a3c38cfc8c4ebf7ce0b380",
+  "architecture": "visionforge_resnet18_imagenet_v1",
+  "class_names": ["crazing", "inclusion", "patches", "pitted_surface", "rolled_in_scale", "scratches"]
+}
